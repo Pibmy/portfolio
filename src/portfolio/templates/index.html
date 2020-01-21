@@ -3,13 +3,13 @@
 {% block content %}
 <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
     <div class="w-100">
-        <h1 class="mb-0">user.last_name
-            <span class="text-primary">user.first_name</span>
+        <h1 class="mb-0">{{user.last_name}}
+            <span class="text-primary">{{user.first_name}}</span>
         </h1>
         <div class="subheading mb-5">
-            <a href="mailto:user.email">user.email</a>
+            <a href="mailto:{{user.email}}">{{user.email}}</a>
         </div>
-        <p class="lead mb-5">user.description</p>
+        <p class="lead mb-5">{{user.description}}</p>
         <div class="social-icons">
             <a href="#">
                 <i class="fab fa-linkedin-in"></i>
