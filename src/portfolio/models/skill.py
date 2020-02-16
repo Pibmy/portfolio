@@ -3,17 +3,14 @@ from django.db import models
 
 class Skill(models.Model):
 
-    CATEGORIES = (
-        ('IT-L', 'Langage de programation'),
-        ('IT-T', 'Outils de programation'),
-        ('IT-S', 'Systèmes Informatique'),
-        ('FH', 'Humaine'),
-        ('O', 'Other'),
-    )
+    KINDS = ((0, 'Human Skill'), (1, 'Tech. Skill'))
 
-    category = models.CharField(max_length=30, choices=CATEGORIES)
     name = models.CharField(max_length=30)
+    kind = models.IntegerField(choices=KINDS)
 
     # optional
     icon = models.CharField(max_length=30, blank=True)
     description = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.name
