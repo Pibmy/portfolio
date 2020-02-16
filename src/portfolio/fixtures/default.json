@@ -1,0 +1,102 @@
+[
+    {
+        "model": "portfolio.person",
+        "pk": 1,
+        "fields": {
+            "first_name": "Prenom",
+            "last_name": "Nom",
+            "pseudo": "pseudo",
+            "email": "mail@mail.com",
+            "description": "Little description...",
+            "interests": "Interrested in..."
+        }
+    },
+    {
+        "model": "portfolio.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Reading",
+            "kind": 0,
+            "description": "Little description..."
+        }
+    },
+    {
+        "model": "portfolio.skill",
+        "pk": 2,
+        "fields": {
+            "name": "Comprehension",
+            "kind": 0,
+            "description": "Little description..."
+        }
+    },
+    {
+        "model": "portfolio.skill",
+        "pk": 3,
+        "fields": {
+            "name": "HTML",
+            "kind": 1,
+            "description": "Little description..."
+        }
+    },
+    {
+        "model": "portfolio.skill",
+        "pk": 4,
+        "fields": {
+            "name": "CSS",
+            "kind": 1,
+            "description": "Little description..."
+        }
+    },
+    {
+        "model": "portfolio.profesion",
+        "pk": 1,
+        "fields": {
+            "job_label": "Job Label",
+            "company": "Company Name",
+            "description": "Little description...",
+            "from_date": "2002-01-01",
+            "to_date": "2004-01-01",
+            "person": 1,
+            "skills": [2, 3, 4]
+        }
+    },
+    {
+        "model": "portfolio.formation",
+        "pk": 1,
+        "fields": {
+            "diploma": "Diploma Label",
+            "school": "School Name",
+            "description": "Little description...",
+            "from_date": "2002-01-01",
+            "to_date": "2004-01-01",
+            "person": 1,
+            "skills": [2, 3, 4]
+        }
+    },
+    {
+        "model": "portfolio.project",
+        "pk": 1,
+        "fields": {
+            "name": "Project Name A",
+            "description": "Little description...",
+            "from_date": "2004-01-01",
+            "to_date": "2005-01-01",
+            "person": 1,
+            "skills": [2, 4],
+            "pro_context": 1
+        }
+    },
+    {
+        "model": "portfolio.project",
+        "pk": 2,
+        "fields": {
+            "name": "Project Name B",
+            "description": "Little description...",
+            "from_date": "2002-01-01",
+            "to_date": "2003-01-01",
+            "person": 1,
+            "skills": [1, 2],
+            "sch_context": 1
+        }
+    }
+  ]
